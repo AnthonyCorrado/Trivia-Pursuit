@@ -1,0 +1,19 @@
+<div class='backing' id="black-text">
+<%= form_for @bar do |f| %>
+	Bar Name: <%= f.text_field :name, class: "form-color" %><br />
+	Street: <%= f.text_field :street, class: "form-color" %><br />
+	City:<%= f.text_field :city, class: "form-color" %><br />
+	Zip:<%= f.number_field :zip, class: "form-color" %><br />
+	Day:<%= f.select :day, [['Monday'],['Tuesday'],['Wednesday'],['Thursday'],['Friday'],['Saturday'],['Sunday']]%><br />
+	Time:<%= f.text_field :time, class: "form-color" %><br />
+	Theme:<%= f.select :theme, [['general'],['entertainment'],['sports']] %><br />
+	Web:<%= f.text_field :web, class: "form-color" %><br />
+	Latitude:<%= f.text_field :lat, class: "form-color" %><br />
+	Longitude:<%= f.text_field :lon, class: "form-color" %><br />
+
+
+	<%= f.submit 'Add' %>
+<% end %>
+</div>
+
+
